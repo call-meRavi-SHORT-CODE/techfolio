@@ -4,7 +4,7 @@
 
 	const name = data?.name ?? 'Arul';
 	const headline = "AI Engineer with a passion for building AI Agents.";
-	const subheadline = 'Specialized in Computer Vision and Natural Language Processing.';
+	const subheadline = 'Specialized in Natural Language Processing, and LLM - giving AI a brain and a personality. Experienced in building RAG pipelines, agentic AI systems, and scalable generative AI applications using modern cloud platforms and MCP Servers.';
 	const { links } = data?.about || {};
 </script>
 

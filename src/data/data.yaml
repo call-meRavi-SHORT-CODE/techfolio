@@ -6,12 +6,12 @@ config:
 info:
   sidebar:
     description:
-      - 'B.Tech CSE w/s AI & ML'
+      - 'B.E CSE(AI & ML)'
     details:
       - icon: 'mdi:location'
         text: 'Chennai, India'
       - icon: 'mdi:university'
-        text: 'SRM University - KTR'
+        text: 'Chennai Institute of Technology'
   about:
     description:
       - "I am a passionate Computer Science and Engineering student specializing in **Artificial Intelligence** and Machine Learning. My interests lie in developing innovative solutions using **deep learning**, generative models, and **computer vision.** I enjoy tackling real-world challenges through creative problem-solving and continuous learning."
@@ -25,26 +25,26 @@ info:
       #- icon: 'mdi:web'
        # link: 'https://vaishnav.one'
        # text: 'Web Portfolio'
-  name: 'Arul Kumaran'
+  name: 'Ravikrishna J'
   image: 'me.jpeg'
   location: 'Chennai, India'
-  university: 'SRM Institute of Science & Technology'
+  university: 'Chennai Institute of Technology'
   socials:
     Email:
       icon: 'ic:baseline-email'
-      link: 'mailto:arulkumaranp02@gmail.com'
+      link: 'mailto:ravikrishnaj25@gmail.com'
     LinkedIn:
       icon: 'mdi:linkedin'
-      link: 'https://www.linkedin.com/in/arul-kumaran-p'
+      link: 'www.linkedin.com/in/ravikrishna-j-4823a827a'
     Github:
       icon: 'mdi:github'
-      link: 'https://github.com/arulkumarann'
+      link: 'https://github.com/call-meRavi-SHORT-CODE'
     LeetCode:
       icon: 'simple-icons:leetcode'
-      link: 'https://leetcode.com/'
+      link: 'https://leetcode.com/u/Ravikrishna_25/'
   footer: "[ravikrishnaj25@gmail.com](mailto:ravikrishnaj25@gmail.com)"
   navbar:
-    title: 'Arul Kumaran'
+    title: 'Ravikrishna'
     icon: 'me.jpeg'
     separator: '/'
     links:
