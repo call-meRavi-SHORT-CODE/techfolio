@@ -7,8 +7,13 @@
 </script>
 
 {#if iconOnly}
-	<a href={link} target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110">
-		<Icon {icon} />
+	<a
+		href={link}
+		target="_blank"
+		rel="noopener noreferrer"
+		class="transition-transform duration-200 hover:scale-110 text-gray-700 dark:text-gray-200"
+	>
+		<Icon {icon} class="text-2xl md:text-3xl" />
 	</a>
 {:else}
 	<a

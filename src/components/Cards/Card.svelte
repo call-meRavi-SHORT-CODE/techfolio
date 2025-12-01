@@ -2,15 +2,16 @@
 	import Markdown from 'svelte-exmarkdown';
 	import Button from '../Buttons/Button.svelte';
 
-	export let title,
-		description,
-		links,
-		image,
-		location,
-		duration,
-		designation,
-		onHover,
-		defaultAsset;
+export let title,
+	description,
+	links,
+	image,
+	location,
+	duration,
+	designation,
+	onHover,
+	defaultAsset,
+	compact = false;
 
 	let img_url = `/images/${image ?? defaultAsset}`;
 
@@ -48,8 +49,8 @@
 	on:mouseleave={handleMouseLeave}
 	tabindex="0"
 >
-	<div class="flex md:flex-row flex-col p-4 md:p-5 gap-4 md:gap-5">
-		<div class="md:w-1/4 flex-shrink-0 max-w-[120px] md:max-w-[140px]">
+	<div class={`flex md:flex-row flex-col ${compact ? 'p-3 md:p-4 gap-3 md:gap-4' : 'p-4 md:p-5 gap-4 md:gap-5'}`}>
+		<div class={`md:w-1/4 flex-shrink-0 ${compact ? 'max-w-[90px] md:max-w-[110px]' : 'max-w-[120px] md:max-w-[140px]'}`}>
 			<div class="rounded-lg overflow-hidden bg-gray-50 dark:bg-zinc-800 transition-transform duration-300 group-hover:scale-105">
 				<img src={img_url} alt="card image" class="w-full h-full object-cover" />
 			</div>

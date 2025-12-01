@@ -1,29 +1,33 @@
 <script>
-	import SvelteMarkdown from 'svelte-exmarkdown';
 	import Button from '../Buttons/Button.svelte';
 	export let data;
 
-	const { description, links } = data?.about || {};
+	const name = data?.name ?? 'Arul';
+	const headline = "AI Engineer with a passion for building AI Agents.";
+	const subheadline = 'Specialized in Computer Vision and Natural Language Processing.';
+	const { links } = data?.about || {};
 </script>
 
-<div class="flex flex-col slide-up">
-	<h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">About Me</h1>
-	<div class="border-t-2 border-blue-500 dark:border-blue-400 w-24 mt-4 mb-6"></div>
+<section class="slide-up">
+	<div class="space-y-6 md:space-y-8">
+		<h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+			Hi, I'm {name.split(' ')[0]}
+		</h1>
+		<div class="max-w-3xl space-y-3 md:space-y-4">
+			<p class="text-lg md:text-2xl font-medium text-gray-800 dark:text-gray-100">
+				{headline}
+			</p>
+			<p class="text-base md:text-lg text-gray-600 dark:text-gray-300">
+				{subheadline}
+			</p>
+		</div>
 
-	<div class="space-y-5">
-		{#if description}
-			{#each description as desc}
-				<p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-					<SvelteMarkdown md={desc} />
-				</p>
-			{/each}
-		{/if}
 		{#if links}
-			<div class="flex flex-wrap gap-4 mt-8">
+			<div class="flex flex-wrap gap-4 pt-2">
 				{#each links as link}
 					<Button {...link} />
 				{/each}
 			</div>
 		{/if}
 	</div>
-</div>
+</section>

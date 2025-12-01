@@ -42,10 +42,22 @@
 
 		<!-- tags removed -->
 	</div>
-	<div class="border-t-2 border-blue-500 dark:border-blue-400 w-24 mt-6 mb-8"></div>
-	{#each items as item}
-		<div transition:slide={{ duration: 400 }} class="w-full mt-5">
-			<Card {...item} {defaultAsset} />
+	<div class="border-t-2 border-blue-500 dark:border-blue-400 w-24 mt-2 mb-4"></div>
+	{#if title === 'Skills' && items?.[0]?.tags}
+		<div class="w-full mt-2 flex flex-wrap gap-2.5">
+			{#each items[0].tags as skill}
+				<span
+					class="px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800 dark:bg-zinc-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700"
+				>
+					{skill}
+				</span>
+			{/each}
 		</div>
-	{/each}
+	{:else}
+		{#each items as item}
+			<div transition:slide={{ duration: 400 }} class="w-full mt-5">
+				<Card {...item} {defaultAsset} compact={title === 'Education'} />
+			</div>
+		{/each}
+	{/if}
 </div>
