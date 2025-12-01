@@ -1,0 +1,145 @@
+config:
+  darkMode: true
+  maxDisplay: 3
+  addAllTag: true
+  defaultAsset: 'favicon.png'
+info:
+  sidebar:
+    description:
+      - 'B.Tech CSE w/s AI & ML'
+    details:
+      - icon: 'mdi:location'
+        text: 'Chennai, India'
+      - icon: 'mdi:university'
+        text: 'SRM University - KTR'
+  about:
+    description:
+      - "I am a passionate Computer Science and Engineering student specializing in **Artificial Intelligence** and Machine Learning. My interests lie in developing innovative solutions using **deep learning**, generative models, and **computer vision.** I enjoy tackling real-world challenges through creative problem-solving and continuous learning."
+    links:
+      - icon: 'mdi:document'
+        text: 'Resume'
+        link: 'https://drive.google.com/file/d/1CM5EWTIKBrUOYq_OzdtCvyuyQ5T4avVs/view?usp=sharing'
+      #- icon: 'system-uicons:write'
+        #link: 'https://medium.com/@wishee'
+        #text: 'Medium Articles'
+      #- icon: 'mdi:web'
+       # link: 'https://vaishnav.one'
+       # text: 'Web Portfolio'
+  name: 'Arul Kumaran'
+  image: 'me.jpeg'
+  location: 'Chennai, India'
+  university: 'SRM Institute of Science & Technology'
+  socials:
+    Email:
+      icon: 'ic:baseline-email'
+      link: 'mailto:arulkumaranp02@gmail.com'
+    Twitter:
+      icon: 'mdi:twitter'
+      link: 'https://twitter.com/arullkumarann'
+    LinkedIn:
+      icon: 'mdi:linkedin'
+      link: 'https://www.linkedin.com/in/arul-kumaran-p'
+    Github:
+      icon: 'mdi:github'
+      link: 'https://github.com/arulkumarann'
+  footer: "This is a fork of my friend's [website](https://github.com/vaishnav-mk/academic-portfolio)"
+  navbar:
+    title: 'Arul Kumaran'
+    separator: '/'
+    links:
+      #- title: 'Portfolio'
+        #url: 'https://vaishnav.one'
+      - title: 'Resume'
+        url: 'https://drive.google.com/file/d/1CM5EWTIKBrUOYq_OzdtCvyuyQ5T4avVs/view?usp=sharing'
+sections:
+  - title: 'Projects'
+    data:
+      - title: "Balancing Imbalanced Datasets with Conditional GANs"
+        description:
+        - " -  Developed a **Conditional GAN** to generate synthetic images for underrepresented classes, improving dataset balance and model performance."
+        - " -  Implemented comprehensive data handling scripts for downloading, preprocessing, and preparing image and question datasets and for training the model."
+        links:
+          - icon: 'mdi:github'
+            text: 'Github'
+            link: 'https://github.com/arulkumarann/cgan-augumentation'
+        image: 'cgan.jpg'
+        tags: ['All', 'Machine Learning']
+        duration: "December 2024"
+      - title: "Image Segmentation through U-Net Architecture Implementation"
+        description:
+        - " - Developed a **U-Net architecture** for image segmentation, achieving a validation accuracy of 98% and an Intersection over Union (IoU) score of 95%."
+        - " - Implemented custom data preprocessing and augmentation techniques to enhance model performance on diverse datasets."
+        - " - Utilized **PyTorch** for model training and evaluation, leading to significant improvements in accuracy and IoU metrics compared to baseline models."
+        links:
+          - icon: 'mdi:github'
+            text: 'Github'
+            link: 'https://github.com/arulkumarann/u-net-implementation'
+        image: 'U-Net.png'
+        tags: ['All', 'Machine Learning']
+        duration: "Sep 2024"
+      - title: "VQA V1 PyTorch Implementation"
+        description:
+        - " -  Implemented the vanilla **VQA** system using PyTorch, replicating the research paper **VQA: Visual Question Answering**."
+        - " -  Implemented comprehensive data handling scripts for downloading, preprocessing, and preparing image and question datasets and for training the model."
+        links:
+          - icon: 'mdi:github'
+            text: 'Github'
+            link: 'https://github.com/arulkumarann/vqa_implementation'
+        image: 'vqa_architecture.GIF'
+        tags: ['All', 'Machine Learning']
+        duration: "June 2024"
+      - title: "Quantum Neural Network Benchmarking against Classical Neural Networks"
+        description:
+        - " -  Compared the performance of QNNs and CNNs, achieving 80% test accuracy for CNN and 65% test accuracy for QNN."
+        - " -  Highlighted computational trade-offs, with QNNs taking ~20 seconds per epoch compared to CNNs' <2 seconds."
+        links:
+          - icon: 'mdi:github'
+            text: 'Github'
+            link: 'https://github.com/arulkumarann/qnn'
+        image: 'qnn.jpg'
+        tags: ['All', 'Machine Learning']
+        duration: "Oct 2024"
+
+
+  - title: "Community"
+    data:
+      - title: "Next Tech Lab"
+        designation: "Member - McCarthy Lab"
+        location: "Chennai, IN"
+        duration: "Oct 2023 - Present"
+        description:
+          - " - Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I delved into cutting-edge research in **AI** and **Deep Learning**."
+          - "  - Contributed to a portfolio of multiple **Deep Learning** projects, gaining proficiency in **Computer Vision** discipline."
+        image: "ntl.png"
+        # links:
+        #   - link: "https://dream-lab.in/hybrid-clouds-quantum"
+        #     text: "DREAM:lab"
+        #   - link: "https://doi.org/10.1109/eScience55777.2022.00057"
+        #     text: "XFaaS Paper [eScience 2022, CCGRID 2023]"
+        tags: ["All", "Machine Learning"]
+      - title: "Next Gen AI"
+        designation: "Member - ML & DL"
+        location: "Chennai, IN"
+        duration: "Sep 2023 - Present"
+        description:
+        - " - Gained proficiency in the fundamentals of **machine learning** and established valuable connections"
+        - " -  Coordinated and executed a successful hackathon and datathon competition as a key member of the
+organizing team, showcasing organizational, and teamwork skills."
+        image: "ngai1.png"
+        tags: ["All", "Machine Learning"]
+
+#      - title: 'Quantum Teleportation'
+#        description:
+#          - 'Engineered a Quantum Data Teleportation system with **Qiskit** using 3 qubits, employing strategic Bell pair utilization and harnessing the principles of **Quantum Superposition** and **Quantum Entanglement**. Implemented a robust teleportation mechanism, showcasing expertise in quantum algorithms.'
+#          - 'Incorporated insights from the ”Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels” paper to enhance the performance of the system. Demonstrated a nuanced understanding of cutting-edge research, elevating the teleportation capabilities through dual classical and quantum channels.'
+#          - 'Established 2 entangled qubits for secure and efficient quantum data teleportation between distant locations through strategic utilization of Bell pair utilization and the principles of **Quantum Superposition** and **Entanglement**.'
+#          - 'Implemented 3-bit quantum error correction mechanisms to ensure data accuracy during teleportation processes.'
+#          - 'Accelerated data teleportation time by a notable 12% by integrating CUDA Quantum, enhancing overall system efficiency and performance.'
+#        links:
+#          - icon: 'mdi:github'
+#            text: 'Github Link'
+#           link: 'https://github.com/vaishnav-mk/quantum-teleportation'
+#        image: 'circuit.png'
+#        tags: ['Machine Learning']
+
+ 
