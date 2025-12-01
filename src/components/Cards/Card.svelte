@@ -42,34 +42,36 @@
 </script>
 
 <div
-	class="border rounded-lg dark:bg-zinc-900 dark:border-neutral-700 cursor-default"
+	class="group border border-gray-200 dark:border-neutral-700 rounded-xl bg-white dark:bg-zinc-900 cursor-default overflow-hidden card-hover shadow-sm hover:shadow-lg transition-all duration-300"
 	role="button"
 	on:mouseenter={handleHover}
 	on:mouseleave={handleMouseLeave}
 	tabindex="0"
 >
-	<div class="flex md:flex-row flex-col p-4 gap-4">
-		<div class="md:w-1/4 rounded-lg">
-			<img src={img_url} alt="Experience Logo" class="rounded-lg" />
+	<div class="flex md:flex-row flex-col p-6 gap-6">
+		<div class="md:w-1/4 flex-shrink-0">
+			<div class="rounded-xl overflow-hidden bg-gray-50 dark:bg-zinc-800 transition-transform duration-300 group-hover:scale-105">
+				<img src={img_url} alt="Experience Logo" class="w-full h-full object-cover" />
+			</div>
 		</div>
-		<div class="md:w-3/4 flex flex-col">
-			<div class="flex flex-col md:flex-row justify-between">
-				<div class="flex flex-col">
-					<div class="font-bold text-lg">{values.title}</div>
-					<div class="text-md">{values.designation}</div>
+		<div class="md:w-3/4 flex flex-col gap-3">
+			<div class="flex flex-col md:flex-row justify-between gap-3 md:gap-0">
+				<div class="flex flex-col gap-1">
+					<h3 class="font-bold text-xl text-gray-900 dark:text-white transition-colors">{values.title}</h3>
+					<p class="text-base text-gray-600 dark:text-gray-400">{values.designation}</p>
 				</div>
-				<div class="flex flex-col">
-					<h1 class="text-sm md:ml-4 font-semibold justify-end flex">{values.duration}</h1>
-					<h1 class="text-sm md:ml-4 justify-end flex">{values.location}</h1>
+				<div class="flex flex-col items-start md:items-end gap-1">
+					<span class="text-sm font-semibold text-gray-700 dark:text-gray-300">{values.duration}</span>
+					<span class="text-sm text-gray-600 dark:text-gray-400">{values.location}</span>
 				</div>
 			</div>
-			<ul class="list-disc mt-4 ml-8">
+			<ul class="list-disc space-y-2 ml-5 text-gray-700 dark:text-gray-300">
 				{#each values.description as desc}
-					<li><Markdown md={desc} /></li>
+					<li class="leading-relaxed"><Markdown md={desc} /></li>
 				{/each}
 			</ul>
 			{#if values.links}
-				<div class="flex flex-wrap gap-4 mt-4">
+				<div class="flex flex-wrap gap-3 mt-2">
 					{#each values.links as link}
 						<Button {...link} />
 					{/each}

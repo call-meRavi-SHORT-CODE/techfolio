@@ -14,30 +14,28 @@
 	const { darkMode, maxDisplay, addAllTag, defaultAsset } = config;
 </script>
 
-<div class="dark:bg-zinc-900 dark:text-white">
+<div class="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-zinc-950 dark:to-zinc-900 transition-colors duration-300">
 	{#if NavData}
-		<Nav {NavData} />
+		<Nav {NavData} {defaultAsset} />
 	{/if}
-	<div class="flex flex-col md:flex-row max-w-7xl md:mx-auto md:gap-4 md:m-4">
-		<Sidebar data={info} />
+	<div class="flex flex-col md:flex-row max-w-7xl mx-auto">
+		<Sidebar data={info} {defaultAsset} />
 		{#if NavData}
-			<MobileSidebar data={info} />
+			<MobileSidebar data={info} {defaultAsset} />
 		{/if}
-		<main class="md:w-3/4 overflow-y-auto p-10">
-			<div class="min-w-screen min-h-screen">
-				<div class="container mx-auto max-w-5xl mt-5">
-					{#if info}
-						<About data={info} />
-					{/if}
-					{#each sections as sectionData}
-						<Section
-							{sectionData}
-							{maxDisplay}
-							addAllTag={sectionData.addAllTag ?? addAllTag}
-							{defaultAsset}
-						/>
-					{/each}
-				</div>
+		<main class="md:w-4/5 w-full px-6 md:px-12 py-12 md:py-16">
+			<div class="max-w-5xl mx-auto space-y-16">
+				{#if info}
+					<About data={info} />
+				{/if}
+				{#each sections as sectionData}
+					<Section
+						{sectionData}
+						{maxDisplay}
+						addAllTag={sectionData.addAllTag ?? addAllTag}
+						{defaultAsset}
+					/>
+				{/each}
 			</div>
 		</main>
 	</div>

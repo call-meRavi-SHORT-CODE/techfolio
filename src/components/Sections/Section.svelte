@@ -34,43 +34,40 @@
 	displayTags = tags.length > 1 || displayTags;
 </script>
 
-<div class="flex flex-col items-center mt-28 dark:text-stone-300" id={title?.toLowerCase()}>
-	<div class="flex flex-col md:flex-row justify-between w-full items-center">
+<div class="flex flex-col items-center mt-20 md:mt-28 slide-up" id={title?.toLowerCase()}>
+	<div class="flex flex-col md:flex-row justify-between w-full items-start md:items-center gap-4 md:gap-0">
 		<a
-			class="text-4xl font-bold text-start w-full text-neutral-600 dark:text-stone-300 transition duration-300 group"
+			class="group text-4xl md:text-5xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
 			href={`#${title?.toLowerCase()}`}
 		>
 			<span>{title}</span>
 			<span
-				class="text-3xl font-bold text-neutral-600 dark:text-slate-400 hidden group-hover:inline"
+				class="text-3xl font-bold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
 				>#</span
 			>
 		</a>
 
 		{#if displayTags}
-			<div class="flex gap-4 w-full md:justify-end justify-start items-center">
+			<div class="flex flex-wrap gap-3 md:gap-4 items-center">
 				{#each tags as tag}
 					<button
-						class={`text-lg font-thin cursor-pointer ${
+						class={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
 							selectedTag === tag
-								? 'text-zinc-800 underline underline-offset-2 dark:text-stone-300'
-								: 'text-neutral-600 dark:text-stone-300'
+								? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 shadow-sm'
+								: 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-800'
 						}`}
 						on:click={() => (selectedTag = tag)}
 					>
 						{tag}
 					</button>
-					{#if tags.length > 1 && tag !== tags[tags.length - 1]}
-						<span class="text-lg font-thin mx-2">/</span>
-					{/if}
 				{/each}
 			</div>
 		{/if}
 	</div>
-	<div class="border-t-2 w-full mt-2 dark:border-neutral-700"></div>
+	<div class="border-t-2 border-blue-500 dark:border-blue-400 w-24 mt-6 mb-8"></div>
 	{#each items as item, index}
 		{#if item?.tags?.includes(selectedTag) && (showAll || index < maxDisplay)}
-			<div transition:slide={{ amount: 10 }} class="flex flex-col w-full gap-4 mt-5">
+			<div transition:slide={{ duration: 400 }} class="w-full mt-5">
 				<Card {...item} {defaultAsset} />
 			</div>
 		{/if}

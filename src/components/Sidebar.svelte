@@ -10,29 +10,41 @@
 </script>
 
 <aside
-	class="md:w-1/5 md:h-full w-full md:sticky md:top-0 md:min-h-screen p-5 hidden md:block dark:text-zinc-300"
+	class="md:w-1/5 w-full md:sticky md:top-20 md:h-[calc(100vh-5rem)] p-8 hidden md:block overflow-y-auto"
 >
-	<div class="flex flex-col items-start">
-		<img src={img_url} alt={data?.name} class="w-48 h-48 rounded-full mx-auto mb-5" />
-		<h1 class="text-xl font-bold">{data?.name}</h1>
+	<div class="flex flex-col items-start space-y-6 fade-in">
+		<div class="w-full flex justify-center mb-4">
+			<div class="relative group">
+				<div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full opacity-25 group-hover:opacity-40 blur transition duration-500"></div>
+				<img src={img_url} alt={data?.name} class="relative w-48 h-48 rounded-full object-cover ring-4 ring-white dark:ring-zinc-900 shadow-xl" />
+			</div>
+		</div>
 
-		{#if sidebar?.description}
-			<p class="text-md my-4">{sidebar?.description}</p>
-		{/if}
+		<div class="w-full">
+			<h1 class="text-2xl font-bold text-gray-900 dark:text-white">{data?.name}</h1>
 
-		{#if sidebar?.details}
-			{#each sidebar.details as item}
-				<p class="flex items-center gap-2">
-					<Icon icon={item.icon} class="text-xl text-red-600" />
-					{item.text}
-				</p>
-			{/each}
-		{/if}
+			{#if sidebar?.description}
+				<p class="text-base text-gray-600 dark:text-gray-400 mt-3 leading-relaxed">{sidebar?.description}</p>
+			{/if}
 
-		<ul class="flex flex-col gap-4 mt-5 w-full">
-			{#each socials as [key, value]}
-				<Button text={key} link={value?.link} icon={value?.icon} />
-			{/each}
-		</ul>
+			{#if sidebar?.details}
+				<div class="space-y-3 mt-6">
+					{#each sidebar.details as item}
+						<div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+							<Icon icon={item.icon} class="text-xl text-blue-600 dark:text-blue-400 flex-shrink-0" />
+							<span class="text-sm">{item.text}</span>
+						</div>
+					{/each}
+				</div>
+			{/if}
+		</div>
+
+		<div class="w-full pt-4 border-t border-gray-200 dark:border-neutral-700">
+			<ul class="flex flex-col gap-3 w-full">
+				{#each socials as [key, value]}
+					<Button text={key} link={value?.link} icon={value?.icon} />
+				{/each}
+			</ul>
+		</div>
 	</div>
 </aside>
