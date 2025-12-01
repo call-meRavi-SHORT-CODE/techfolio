@@ -1,16 +1,13 @@
 <script>
-	import Button from './Buttons/Button.svelte';
 	import Icon from '@iconify/svelte';
 	export let data, defaultAsset;
 
 	const img_url = `/images/${data?.image || defaultAsset}`;
 	const { sidebar } = data;
-
-	const socials = Object.entries(data?.socials || []);
 </script>
 
 <aside
-	class="md:w-1/5 w-full md:sticky md:top-20 md:h-[calc(100vh-5rem)] p-8 hidden md:block overflow-y-auto"
+	class="md:w-1/5 w-full md:sticky md:top-20 md:h-[calc(100vh-5rem)] p-8 hidden md:block"
 >
 	<div class="flex flex-col items-start space-y-6 fade-in">
 		<div class="w-full flex justify-center mb-4">
@@ -37,14 +34,6 @@
 					{/each}
 				</div>
 			{/if}
-		</div>
-
-		<div class="w-full pt-4 border-t border-gray-200 dark:border-neutral-700">
-			<ul class="flex flex-col gap-3 w-full">
-				{#each socials as [key, value]}
-					<Button text={key} link={value?.link} icon={value?.icon} />
-				{/each}
-			</ul>
 		</div>
 	</div>
 </aside>

@@ -16,7 +16,7 @@
 
 <div class="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-zinc-950 dark:to-zinc-900 transition-colors duration-300">
 	{#if NavData}
-		<Nav {NavData} {defaultAsset} />
+		<Nav {NavData} {defaultAsset} socials={info.socials} />
 	{/if}
 	<div class="flex flex-col md:flex-row max-w-7xl mx-auto">
 		<Sidebar data={info} {defaultAsset} />

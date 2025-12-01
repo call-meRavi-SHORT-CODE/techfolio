@@ -33,18 +33,19 @@ info:
     Email:
       icon: 'ic:baseline-email'
       link: 'mailto:arulkumaranp02@gmail.com'
-    Twitter:
-      icon: 'mdi:twitter'
-      link: 'https://twitter.com/arullkumarann'
+    LeetCode:
+      icon: 'simple-icons:leetcode'
+      link: 'https://leetcode.com/'
     LinkedIn:
       icon: 'mdi:linkedin'
       link: 'https://www.linkedin.com/in/arul-kumaran-p'
     Github:
       icon: 'mdi:github'
       link: 'https://github.com/arulkumarann'
-  footer: "This is a fork of my friend's [website](https://github.com/vaishnav-mk/academic-portfolio)"
+  footer: "[ravikrishnaj25@gmail.com](mailto:ravikrishnaj25@gmail.com)"
   navbar:
     title: 'Arul Kumaran'
+    icon: 'me.jpeg'
     separator: '/'
     links:
       #- title: 'Portfolio'
@@ -52,6 +53,37 @@ info:
       - title: 'Resume'
         url: 'https://drive.google.com/file/d/1CM5EWTIKBrUOYq_OzdtCvyuyQ5T4avVs/view?usp=sharing'
 sections:
+  - title: "Experience"
+    data:
+      - title: "Next Tech Lab"
+        designation: "Member - McCarthy Lab"
+        location: "Chennai, IN"
+        duration: "Oct 2023 - Present"
+        description:
+          - " - Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I delved into cutting-edge research in **AI** and **Deep Learning**."
+          - "  - Contributed to a portfolio of multiple **Deep Learning** projects, gaining proficiency in **Computer Vision** discipline."
+        image: "ntl.png"
+        tags: ["All", "Machine Learning"]
+      - title: "Next Gen AI"
+        designation: "Member - ML & DL"
+        location: "Chennai, IN"
+        duration: "Sep 2023 - Present"
+        description:
+        - " - Gained proficiency in the fundamentals of **machine learning** and established valuable connections"
+        - " -  Coordinated and executed a successful hackathon and datathon competition as a key member of the
+organizing team, showcasing organizational, and teamwork skills."
+        image: "ngai1.png"
+        tags: ["All", "Machine Learning"]
+  - title: "Achievements"
+    data:
+      - title: "Academic Excellence"
+        designation: "Top performance and recognition"
+        location: "Chennai, IN"
+        duration: "2023 - Present"
+        description:
+          - " - Add your key awards, scholarships, and notable academic achievements here."
+        image: "srm2.png"
+        tags: ["All", "Machine Learning"]
   - title: 'Projects'
     data:
       - title: "Balancing Imbalanced Datasets with Conditional GANs"
@@ -99,34 +131,6 @@ sections:
         image: 'qnn.jpg'
         tags: ['All', 'Machine Learning']
         duration: "Oct 2024"
-
-
-  - title: "Community"
-    data:
-      - title: "Next Tech Lab"
-        designation: "Member - McCarthy Lab"
-        location: "Chennai, IN"
-        duration: "Oct 2023 - Present"
-        description:
-          - " - Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I delved into cutting-edge research in **AI** and **Deep Learning**."
-          - "  - Contributed to a portfolio of multiple **Deep Learning** projects, gaining proficiency in **Computer Vision** discipline."
-        image: "ntl.png"
-        # links:
-        #   - link: "https://dream-lab.in/hybrid-clouds-quantum"
-        #     text: "DREAM:lab"
-        #   - link: "https://doi.org/10.1109/eScience55777.2022.00057"
-        #     text: "XFaaS Paper [eScience 2022, CCGRID 2023]"
-        tags: ["All", "Machine Learning"]
-      - title: "Next Gen AI"
-        designation: "Member - ML & DL"
-        location: "Chennai, IN"
-        duration: "Sep 2023 - Present"
-        description:
-        - " - Gained proficiency in the fundamentals of **machine learning** and established valuable connections"
-        - " -  Coordinated and executed a successful hackathon and datathon competition as a key member of the
-organizing team, showcasing organizational, and teamwork skills."
-        image: "ngai1.png"
-        tags: ["All", "Machine Learning"]
 
 #      - title: 'Quantum Teleportation'
 #        description:
