@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Ravikrishna</title>
+	<link rel="icon" type="image/png" href="/images/favicon.png" />
 	<meta name="description" content="Personal Portfolio" />
 	<meta name="keywords" content="Ravikrishna, Portfolio, Personal Portfolio" />
 	<meta name="author" content="Ravikrishna J" />
