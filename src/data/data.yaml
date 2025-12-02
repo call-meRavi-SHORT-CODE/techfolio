@@ -110,59 +110,59 @@ sections:
         description:
           - " - CGPA : 8.94"
         image: "cit.png"
-        tags: ["All", "Machine Learning"]
+        
   - title: "Skills"
     data:
       - title: "Skills"
         image: "srm2.png"
         tags: ["Python", "PyTorch", "Tensorflow", "Pandas", "C++", "Java", "VectorDB", "AI Agents"]
+  
+  
   - title: 'Projects'
     data:
-      - title: "Balancing Imbalanced Datasets with Conditional GANs"
+      - title: "BugX - Autonomous Coding Agent"
         description:
-        - " -  Developed a **Conditional GAN** to generate synthetic images for underrepresented classes, improving dataset balance and model performance."
-        - " -  Implemented comprehensive data handling scripts for downloading, preprocessing, and preparing image and question datasets and for training the model."
+        - " - Built BugX, an **autonomous AI coding agent** using LLMs and reasoning algorithms, reducing manual coding effort by **70%** and development time by **50%**."
+        - " -  Designed intelligent modules to **automatically analyze**, **debug**, and **repair** Python projects, enabling end-to-end code understanding, issue detection, and self-correction with minimal human intervention"
         links:
           - icon: 'mdi:github'
             text: 'Github'
-            link: 'https://github.com/arulkumarann/cgan-augumentation'
-        image: 'cgan.jpg'
-        tags: ['All', 'Machine Learning']
-        duration: "December 2024"
-      - title: "Image Segmentation through U-Net Architecture Implementation"
+            link: 'https://github.com/call-meRavi-SHORT-CODE/-BugX.git'
+        image: 'bugX.gif'
+       
+        duration: "November 2025"
+
+
+      - title: "ZeroCodeAgent"
         description:
-        - " - Developed a **U-Net architecture** for image segmentation, achieving a validation accuracy of 98% and an Intersection over Union (IoU) score of 95%."
-        - " - Implemented custom data preprocessing and augmentation techniques to enhance model performance on diverse datasets."
-        - " - Utilized **PyTorch** for model training and evaluation, leading to significant improvements in accuracy and IoU metrics compared to baseline models."
+        - " - an open-source, fully automated framework that generates intelligent LLM agents from natural-language instructions — eliminating 100% of manual coding, configuration, and setup"
+        - " - **AI mode**: that creates agents directly from use-case descriptions"
+        - " - **Workflow Mode**: That converts plain-text workflow steps into complete, deployable agent pipelines"
         links:
           - icon: 'mdi:github'
             text: 'Github'
-            link: 'https://github.com/arulkumarann/u-net-implementation'
-        image: 'U-Net.png'
-        tags: ['All', 'Machine Learning']
-        duration: "Sep 2024"
-      - title: "VQA V1 PyTorch Implementation"
+            link: 'https://github.com/call-meRavi-SHORT-CODE/ZeroCodeAgent'
+        image: 'pi.png'
+        duration: "November 2025 - Present"
+
+
+      - title: "ATHENA 2.0"
         description:
-        - " -  Implemented the vanilla **VQA** system using PyTorch, replicating the research paper **VQA: Visual Question Answering**."
-        - " -  Implemented comprehensive data handling scripts for downloading, preprocessing, and preparing image and question datasets and for training the model."
+        - " -  Built **ATHENA-2.0**, a **multimodal AI desktop agent** capable of vision, voice interaction, and system automation using a custom Tkinter GUI, reducing manual computer operations by 60%.."
+        - " -  Integrated intelligent tools such as **web search**, **file management**, and **TTS**, enabling faster task execution and improving overall system-interaction speed by 2.5×."
         links:
           - icon: 'mdi:github'
             text: 'Github'
-            link: 'https://github.com/arulkumarann/vqa_implementation'
-        image: 'vqa_architecture.GIF'
-        tags: ['All', 'Machine Learning']
-        duration: "June 2024"
-      - title: "Quantum Neural Network Benchmarking against Classical Neural Networks"
-        description:
-        - " -  Compared the performance of QNNs and CNNs, achieving 80% test accuracy for CNN and 65% test accuracy for QNN."
-        - " -  Highlighted computational trade-offs, with QNNs taking ~20 seconds per epoch compared to CNNs' <2 seconds."
-        links:
-          - icon: 'mdi:github'
-            text: 'Github'
-            link: 'https://github.com/arulkumarann/qnn'
-        image: 'qnn.jpg'
-        tags: ['All', 'Machine Learning']
-        duration: "Oct 2024"
+            link: 'https://github.com/call-meRavi-SHORT-CODE/ATHENA-2.0'
+          - icon: 'mdi:link-varian'
+            text: 'LINK'
+            link: 'https://www.youtube.com/watch?v=rMvuAAfqA6k'
+        image: 'athena.png'
+        duration: "February 2024"
+
+
+
+
   - title: "Achievements"
     data:
       - title: "Academic Excellence"

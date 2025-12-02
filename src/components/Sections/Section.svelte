@@ -9,22 +9,25 @@
 
 	// tag filtering disabled for a simpler, cleaner layout
 	export let displayTags = false;
-	export let showAll = true;
 	export let maxDisplay = 3;
 	export let addAllTag = false;
 
-	// remove All / Machine Learning tabs; always show all items
-	let tags = [];
-	let selectedTag = null;
+	const projectProfileUrl = 'https://github.com/call-meRavi-SHORT-CODE';
+	const isProjectsSection = title === 'Projects';
 
-	const toggleShowAll = () => {
-		showAll = !showAll;
+	const redirectToGithub = () => {
+		if (typeof window !== 'undefined') {
+			window.open(projectProfileUrl, '_blank', 'noopener');
+		}
 	};
 
 	onMount(() => {
-		showAll = true;
 		displayTags = false;
 	});
+
+	$: displayedItems = isProjectsSection
+		? (items ?? []).slice(0, maxDisplay)
+		: items ?? [];
 </script>
 
 <div class="flex flex-col items-center mt-20 md:mt-28 slide-up" id={title?.toLowerCase()}>
@@ -54,10 +57,13 @@
 			{/each}
 		</div>
 	{:else}
-		{#each items as item}
+		{#each displayedItems as item (item?.title)}
 			<div transition:slide={{ duration: 400 }} class="w-full mt-5">
 				<Card {...item} {defaultAsset} compact={title === 'Education'} />
 			</div>
 		{/each}
+		{#if isProjectsSection}
+			<ShowButton onClick={redirectToGithub} text="Show more projects" />
+		{/if}
 	{/if}
 </div>
