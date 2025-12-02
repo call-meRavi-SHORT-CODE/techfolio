@@ -35,7 +35,6 @@
 		"@sveltejs/adapter-vercel": "^5.1.0",
 		"gh-pages": "^6.1.1",
 		"js-yaml": "^4.1.0",
-		"svelte-exmarkdown": "^3.0.3",
 		"yaml": "^2.4.1"
 	}
 }
