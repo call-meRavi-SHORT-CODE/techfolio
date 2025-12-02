@@ -55,14 +55,14 @@ info:
 sections:
   - title: "Experience"
     data:
-      - title: "Next Tech Lab"
-        designation: "Member - McCarthy Lab"
+      - title: "Zoho"
+        designation: "AI Software Intern"
         location: "Chennai, IN"
-        duration: "Oct 2023 - Present"
+        duration: "May 2025 - July 2025"
         description:
           - " - Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I delved into cutting-edge research in **AI** and **Deep Learning**."
           - "  - Contributed to a portfolio of multiple **Deep Learning** projects, gaining proficiency in **Computer Vision** discipline."
-        image: "ntl.png"
+        image: "zoho.png"
         tags: ["All", "Machine Learning"]
       - title: "Next Gen AI"
         designation: "Member - ML & DL"
@@ -72,17 +72,17 @@ sections:
         - " - Gained proficiency in the fundamentals of **machine learning** and established valuable connections"
         - " -  Coordinated and executed a successful hackathon and datathon competition as a key member of the
 organizing team, showcasing organizational, and teamwork skills."
-        image: "ngai1.png"
+        image: "zoho.png"
         tags: ["All", "Machine Learning"]
   - title: "Education"
     data:
-      - title: "SRM Institute of Science and Technology"
-        designation: "B.Tech CSE w/s AI & ML"
+      - title: "Chennai Institute Of Technology"
+        designation: "B.E CSE(AI & ML)"
         location: "Chennai, India"
         duration: "2023 - 2027"
         description:
-          - " - CGPA : 9.57"
-        image: "srm.png"
+          - " - CGPA : 8.94"
+        image: "cit.png"
         tags: ["All", "Machine Learning"]
   - title: "Skills"
     data:

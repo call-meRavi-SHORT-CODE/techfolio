@@ -2,10 +2,11 @@
 	import Markdown from 'svelte-exmarkdown';
 	import Toggle from './Buttons/Toggle.svelte';
 	import Icon from '@iconify/svelte';
+	import Button from './Buttons/Button.svelte';
 
-	export let data, darkMode;
+	export let data, darkMode, socials = {};
 
-	const githubLink = 'https://github.com/arulkumarann/academic-portfolio';
+	const socialEntries = Object.entries(socials || {});
 </script>
 
 <footer
@@ -17,15 +18,20 @@
 				<Markdown md={data} />
 			</div>
 			<div class="flex flex-row items-center gap-4">
-				<a
-					href={githubLink}
-					class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-110"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="GitHub"
-				>
-					<Icon icon="akar-icons:github-fill" class="text-2xl" />
-				</a>
+				{#if socialEntries.length}
+					<ul class="flex items-center gap-3 md:gap-4">
+						{#each socialEntries as [key, value]}
+							<li class="tooltip-wrapper">
+								<Button
+									text={key}
+									link={value?.link}
+									icon={value?.icon}
+									iconOnly={true}
+								/>
+							</li>
+						{/each}
+					</ul>
+				{/if}
 				{#if darkMode}
 					<Toggle />
 				{/if}
