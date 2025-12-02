@@ -154,8 +154,8 @@ sections:
           - icon: 'mdi:github'
             text: 'Github'
             link: 'https://github.com/call-meRavi-SHORT-CODE/ATHENA-2.0'
-          - icon: 'mdi:link-varian'
-            text: 'LINK'
+          - icon: 'mdi:youtube'
+            text: 'Youtube'
             link: 'https://www.youtube.com/watch?v=rMvuAAfqA6k'
         image: 'athena.png'
         duration: "February 2024"
@@ -165,27 +165,48 @@ sections:
 
   - title: "Achievements"
     data:
-      - title: "Academic Excellence"
-        designation: "Top performance and recognition"
-        location: "Chennai, IN"
-        duration: "2023 - Present"
+      - title: "Gemini API Developers Hackathon"
+        designation: "Nominated for People's Best Choice Award!"
+        location: "Remote"
+        duration: "Jun 2024"
         description:
-          - " - Add your key awards, scholarships, and notable academic achievements here."
-        image: "srm2.png"
-        tags: ["All", "Machine Learning"]
+          - " - **ATHENA-2.0**, a multimodal AI desktop agent built using the **Gemini API**, was **nominated** for the **People’s Best Choice Award** for its innovation in intelligent system automation."
+        image: "google.png"
+        links:
+          - icon: 'mdi:youtube'
+            text: 'YouTube'
+            link: 'https://www.youtube.com/watch?v=rMvuAAfqA6k'
+          - icon: 'mdi:link-variant'
+            text: 'LINK'
+            link: 'https://ai.google.dev/competition/projects/athena-20'
 
-#      - title: 'Quantum Teleportation'
-#        description:
-#          - 'Engineered a Quantum Data Teleportation system with **Qiskit** using 3 qubits, employing strategic Bell pair utilization and harnessing the principles of **Quantum Superposition** and **Quantum Entanglement**. Implemented a robust teleportation mechanism, showcasing expertise in quantum algorithms.'
-#          - 'Incorporated insights from the ”Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels” paper to enhance the performance of the system. Demonstrated a nuanced understanding of cutting-edge research, elevating the teleportation capabilities through dual classical and quantum channels.'
-#          - 'Established 2 entangled qubits for secure and efficient quantum data teleportation between distant locations through strategic utilization of Bell pair utilization and the principles of **Quantum Superposition** and **Entanglement**.'
-#          - 'Implemented 3-bit quantum error correction mechanisms to ensure data accuracy during teleportation processes.'
-#          - 'Accelerated data teleportation time by a notable 12% by integrating CUDA Quantum, enhancing overall system efficiency and performance.'
-#        links:
-#          - icon: 'mdi:github'
-#            text: 'Github Link'
-#           link: 'https://github.com/vaishnav-mk/quantum-teleportation'
-#        image: 'circuit.png'
-#        tags: ['Machine Learning']
+
+      - title: " HackGenix - TechnoSummit'25"
+        designation: "Runner-up"
+        location: "Sathyabama University, India"
+        duration: "Nov 2025"
+        description:
+          - " - Secured **Runner-up** 🥈 position among 65+ teams and 400 participants, won **₹25,000 cash prize** at **National Level Hackathon**"
+        image: "image.png"
+        links:
+          - icon: 'mdi:link-variant'
+            text: 'Link'
+            link: 'https://www.linkedin.com/posts/ravikrishna-j-4823a827a_hackathon-persistencepaysoff-nevergiveup-activity-7373392426050211841-I4mk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEQLpqIBcxy8nv8YH20ad8GlYH8cMymjUuM'
+
+
+      - title: "TN Police Hackathon 2025 "
+        designation: "Finalist"
+        location: "Chennai, India"
+        duration: "March 2025"
+        
+        description:
+          - " - Finalist in the **TN Police Cyber Hackathon 2025**, held at the DGP Office, Chennai — focused on **detecting** and **preventing** real-world **cyber crimes**."
+        image: "pi.png"
+        links:
+          - icon: 'mdi:link-variant'
+            text: 'Link'
+            link: 'https://www.linkedin.com/posts/ravikrishna-j-4823a827a_%F0%9D%90%96%F0%9D%90%9E-%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AE%F0%9D%90%A0%F0%9D%90%A1%F0%9D%90%AD-%F0%9D%90%AD%F0%9D%90%A1%F0%9D%90%9E-%F0%9D%90%9C%F0%9D%90%B2%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AB-%F0%9D%90%AC%F0%9D%90%9C%F0%9D%90%9A%F0%9D%90%A6%F0%9D%90%AC-activity-7294636329869459456-8GMG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQLpqIBcxy8nv8YH20ad8GlYH8cMymjUuM'
+
+#     
 
  
