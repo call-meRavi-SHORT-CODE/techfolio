@@ -6,9 +6,9 @@
 	function getInitialTheme() {
 		if (typeof window !== 'undefined') {
 			const storedTheme = localStorage.getItem('theme');
-			return storedTheme ? storedTheme : 'light';
+			return storedTheme ? storedTheme : 'dark';
 		}
-		return 'light';
+		return 'dark';
 	}
 
 	theme.subscribe((value) => {

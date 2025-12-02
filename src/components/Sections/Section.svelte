@@ -26,7 +26,7 @@
 	});
 
 	$: displayedItems = isProjectsSection
-		? (items ?? []).slice(0, maxDisplay)
+		? (items ?? []).slice(0, (items?.length ?? 0) <= 4 ? (items?.length ?? 0) : maxDisplay)
 		: items ?? [];
 </script>
 
@@ -62,7 +62,7 @@
 				<Card {...item} {defaultAsset} compact={title === 'Education'} />
 			</div>
 		{/each}
-		{#if isProjectsSection}
+		{#if isProjectsSection && (items?.length ?? 0) > maxDisplay}
 			<ShowButton onClick={redirectToGithub} text="Show more projects" />
 		{/if}
 	{/if}

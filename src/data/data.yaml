@@ -18,7 +18,7 @@ info:
     links:
       - icon: 'mdi:document'
         text: 'Resume'
-        link: 'https://drive.google.com/file/d/1CM5EWTIKBrUOYq_OzdtCvyuyQ5T4avVs/view?usp=sharing'
+        link: 'https://drive.google.com/file/d/1s6VLqcpPEGEGuYdbNI7Rqu5SeLsqzilL/view?usp=sharing'
       #- icon: 'system-uicons:write'
         #link: 'https://medium.com/@wishee'
         #text: 'Medium Articles'
@@ -35,7 +35,7 @@ info:
       link: 'mailto:ravikrishnaj25@gmail.com'
     LinkedIn:
       icon: 'mdi:linkedin'
-      link: 'www.linkedin.com/in/ravikrishna-j-4823a827a'
+      link: 'https://www.linkedin.com/in/ravikrishna-j-4823a827a/'
     Github:
       icon: 'mdi:github'
       link: 'https://github.com/call-meRavi-SHORT-CODE'
@@ -51,7 +51,7 @@ info:
       #- title: 'Portfolio'
         #url: 'https://vaishnav.one'
       - title: 'Resume'
-        url: 'https://drive.google.com/file/d/1CM5EWTIKBrUOYq_OzdtCvyuyQ5T4avVs/view?usp=sharing'
+        url: 'https://drive.google.com/file/d/1s6VLqcpPEGEGuYdbNI7Rqu5SeLsqzilL/view?usp=sharing'
 sections:
   - title: "Experience"
     data:
@@ -115,7 +115,7 @@ sections:
     data:
       - title: "Skills"
         image: "srm2.png"
-        tags: ["Python", "PyTorch", "Tensorflow", "Pandas", "C++", "Java", "VectorDB", "AI Agents"]
+        tags: ["Python", "Retrivel Argumented Generation","PyTorch", "Tensorflow", "GenAI", "LLM - Fine Tuning", "Java", "VectorDB", "AI Agents", "AWS","MCP","LangChain", "LangGraph","SQL","NLP","Transformers"]
   
   
   - title: 'Projects'
@@ -160,6 +160,18 @@ sections:
         image: 'athena.png'
         duration: "February 2024"
 
+      - title: "DeepVision Research AI Agent"
+        description:
+          - " - Built **DeepVision**, an advanced **AI-powered research automation agent** that performs end-to-end analysis using multi-agent architecture, web search, and iterative reflection cycles."
+          - " - Automated research workflows from query to final report, generating **professional, structured markdown reports** with higher depth and accuracy using real-time web search (Tavily) and multi-stage refinement."
+        links:
+          - icon: 'mdi:github'
+            text: 'Github'
+            link: 'https://github.com/call-meRavi-SHORT-CODE/DeepSearch-Agent'
+        image: 'deepai.png'
+        duration: "September 2025"
+
+
 
 
 
@@ -201,7 +213,7 @@ sections:
         
         description:
           - " - Finalist in the **TN Police Cyber Hackathon 2025**, held at the DGP Office, Chennai — focused on **detecting** and **preventing** real-world **cyber crimes**."
-        image: "pi.png"
+        image: "tn.png"
         links:
           - icon: 'mdi:link-variant'
             text: 'Link'

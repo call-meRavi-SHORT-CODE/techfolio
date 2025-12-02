@@ -7,6 +7,15 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<script>
+			// Set dark mode as default before SvelteKit loads
+			const storedTheme = localStorage.getItem('theme');
+			const initialTheme = storedTheme || 'dark';
+			if (initialTheme === 'dark') {
+				document.documentElement.classList.add('dark');
+				document.body.classList.add('dark');
+			}
+		</script>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
