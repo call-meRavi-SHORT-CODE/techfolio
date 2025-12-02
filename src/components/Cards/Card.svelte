@@ -1,5 +1,5 @@
 <script>
-	import Markdown from 'svelte-exmarkdown';
+	import { marked } from 'marked';
 	import Button from '../Buttons/Button.svelte';
 
 export let title,
@@ -76,7 +76,7 @@ export let title,
 			</div>
 			<ul class="list-disc space-y-1.5 ml-4 md:ml-5 text-gray-700 dark:text-gray-300 text-sm md:text-[0.95rem]">
 				{#each values.description as desc}
-					<li class="leading-relaxed"><Markdown md={desc} /></li>
+					<li class="leading-relaxed">{@html marked(desc)}</li>
 				{/each}
 			</ul>
 			{#if values.links}

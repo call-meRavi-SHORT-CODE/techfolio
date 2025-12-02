@@ -1,5 +1,5 @@
 <script>
-	import Markdown from 'svelte-exmarkdown';
+	import { marked } from 'marked';
 	import Toggle from './Buttons/Toggle.svelte';
 	import Icon from '@iconify/svelte';
 	import Button from './Buttons/Button.svelte';
@@ -15,7 +15,7 @@
 	<div class="container mx-auto max-w-7xl">
 		<div class="flex flex-col md:flex-row items-center justify-between gap-6">
 			<div class="text-gray-600 dark:text-gray-400 text-sm md:text-base">
-				<Markdown md={data} />
+				{@html marked(data)}
 			</div>
 			<div class="flex flex-row items-center gap-4">
 				{#if socialEntries.length}
