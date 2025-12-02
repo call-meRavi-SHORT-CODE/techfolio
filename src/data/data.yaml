@@ -60,20 +60,47 @@ sections:
         location: "Chennai, IN"
         duration: "May 2025 - July 2025"
         description:
-          - " - Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I delved into cutting-edge research in **AI** and **Deep Learning**."
-          - "  - Contributed to a portfolio of multiple **Deep Learning** projects, gaining proficiency in **Computer Vision** discipline."
+          - " - Collaborated with product and engineering teams to define key problem statements and deliver impactful data-driven AI solutions."
+          - "  - Built an **AI-powered Docker Agent** that turned **natural-language queries into CLI commands**, reducing manual operations by **98%** and onboarding time by **50%**, with continuous improvements driven by data insights and feedback."
         image: "zoho.png"
-        tags: ["All", "Machine Learning"]
-      - title: "Next Gen AI"
-        designation: "Member - ML & DL"
-        location: "Chennai, IN"
-        duration: "Sep 2023 - Present"
+       
+      - title: "Druidot Consulting (I) OPC Private Limited"
+        designation: "GenAI Intern"
+        location: "Remote, Chennai"
+        duration: "Feb 2024 - Dec 2024"
         description:
-        - " - Gained proficiency in the fundamentals of **machine learning** and established valuable connections"
-        - " -  Coordinated and executed a successful hackathon and datathon competition as a key member of the
-organizing team, showcasing organizational, and teamwork skills."
-        image: "zoho.png"
-        tags: ["All", "Machine Learning"]
+        - " - Built a **multilingual meme-generation** Gradio App using **Generative AI**, **Stable Diffusion**, and **LLMs** to create memes in Hindi, English, Tamil, Telugu, and Malayalam."
+        - " -  Enabled topic-based, tone-based, image-style, and fully custom meme creation, delivering highly personalized meme outputs tailored to user inputs."
+        image: "drui.png"
+
+      - title: "DNYX"
+        designation: "AI/ML Intern"
+        location: "Hybrid, Chennai"
+        duration: "June 2024 - September 2024"
+        description:
+        - " - Developed **PlotWise**, an **Data analysis AI Agent** that enables users to chat with their datasets and extract real-time insights seamlessly"
+        - " - Integrated **automated visualizations**, **trend summarization**, and **intelligent data interpretation**, allowing users to generate clear charts and concise insights from complex datasets with minimal effort."
+        image: "dnyx.jpg"
+
+
+      - title: "ViewAI"
+        designation: "AI Intern"
+        location: "Remote, Chennai"
+        duration: "July 2024 - Oct 2024"
+        description:
+        - " - Contributed to an **AI-driven Virtual Try-On system** as part of the engineering team, focused on **enhancing garment fitting and user experience**."
+        - " - Developed and optimized the **body-measurement extraction** module using **MediaPipe** and **webcam input**, enabling accurate real-time size estimation for virtual try-on workflows"
+        image: "viewai.png"
+
+      - title: "AGC"
+        designation: "AI No-Code Intern"
+        location: "Remote (Part-Time), France"
+        duration: "June 2025 - October 2025"
+        description:
+        - " - Built customized **AI chatbots** for clients using **no-code platforms**, enabling rapid deployment and seamless integration with their workflows."
+        - " - Designed **conversational flows**, **automated responses**, and **domain-specific logic** to deliver efficient, user-friendly chatbot solutions tailored to client needs."
+        image: "agc.png"
+        
   - title: "Education"
     data:
       - title: "Chennai Institute Of Technology"
