@@ -1,37 +1,44 @@
 <script>
+	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 
-	const theme = writable(getInitialTheme());
+	const theme = writable('dark');
+
+	onMount(() => {
+		// Hydrate from storage or system preference
+		const initial = getInitialTheme();
+		theme.set(initial);
+		applyThemeClass(initial);
+
+		const unsubscribe = theme.subscribe((value) => {
+			if (typeof window === 'undefined') return;
+			localStorage.setItem('theme', value);
+			applyThemeClass(value);
+		});
+
+		return () => {
+			unsubscribe();
+		};
+	});
 
 	function getInitialTheme() {
-		if (typeof window !== 'undefined') {
-			const storedTheme = localStorage.getItem('theme');
-			return storedTheme ? storedTheme : 'dark';
-		}
-		return 'dark';
-	}
+		if (typeof window === 'undefined') return 'dark';
 
-	theme.subscribe((value) => {
-		if (typeof window !== 'undefined') {
-			localStorage.setItem('theme', value);
-			updateThemeClassList(value);
-		}
-	});
+		const storedTheme = localStorage.getItem('theme');
+		if (storedTheme === 'light' || storedTheme === 'dark') return storedTheme;
+
+		const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)')?.matches;
+		return prefersDark ? 'dark' : 'light';
+	}
 
 	function toggle() {
 		theme.update((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
 	}
 
-	function updateThemeClassList(theme) {
-		if (theme === 'dark') {
-			document.body.classList.add('dark');
-		} else {
-			document.body.classList.remove('dark');
-		}
-	}
-
-	if (typeof window !== 'undefined') {
-		updateThemeClassList(getInitialTheme());
+	function applyThemeClass(value) {
+		if (typeof document === 'undefined') return;
+		const root = document.documentElement;
+		root.classList.toggle('dark', value === 'dark');
 	}
 </script>
 
